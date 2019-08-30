@@ -1,12 +1,14 @@
-1.//导入所需要的模块
+//导入所需要的模块
 let gulp = require('gulp'),
     rename = require('gulp-rename'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
+    sass = require('gulp-sass'),
     imagemin = require('gulp-imagemin'),
     cssnano = require('gulp-cssnano');
 2.//发布任务
     gulp.task('test',()=>{
+
         console.log('gulp测试成功 ');
     })
     gulp.task('js',()=>{
@@ -16,8 +18,8 @@ let gulp = require('gulp'),
         .pipe(gulp.dest('./dist/js'));
     })
     gulp.task('css',()=>{
-        gulp.src('./src/Sass/*.css')
-        .pipe(uglify())
+        gulp.src('./src/sass/*.scss')
+        .pipe(sass())
         .pipe(rename({suffix : '.min'}))
         .pipe(gulp.dest('./dist/css'));
     })
@@ -27,3 +29,4 @@ let gulp = require('gulp'),
         .pipe(rename({suffix : '.min'}))
         .pipe(gulp.dest("./dist/img"))
     })
+    
