@@ -6,7 +6,7 @@ let gulp = require('gulp'),
     sass = require('gulp-sass'),
     imagemin = require('gulp-imagemin'),
     cssnano = require('gulp-cssnano');
-2.//发布任务
+//发布任务
     gulp.task('test',()=>{
 
         console.log('gulp测试成功 ');
@@ -27,7 +27,7 @@ let gulp = require('gulp'),
         gulp.src("./src/img/*.*")
         .pipe(imagemin())
         .pipe(rename({suffix : '.min'}))
-        .pipe(gulp.dest("./dist/img"))
+        .pipe(gulp.dest("./dist/img"));
     })
     
 gulp.task("default",()=>{
