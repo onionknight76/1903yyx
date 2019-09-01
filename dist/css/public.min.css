@@ -1,2 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul, li {
+  list-style: none; }
+
+img {
+  border: 0;
+  vertical-align: middle; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+p {
+  word-wrap: break-word;
+  font-style: normal;
+  font-weight: normal; }
+
+a {
+  text-decoration: none; }
+
+input, button {
+  outline: none;
+  border: none;
+  list-style: none; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
+
+body {
+  position: relative;
+  font-size: 16px; }
+
 header {
-  width: 100px; }
+  width: 100%;
+  height: 140px; }
+  header .bao {
+    width: 100%;
+    background: #000000; }
+    header .bao .top {
+      width: 1226px;
+      height: 40px;
+      background: #000000;
+      margin: 0 auto; }
+      header .bao .top .nav-left {
+        width: 699px;
+        height: 40px;
+        float: left; }
+        header .bao .top .nav-left .left li {
+          float: left; }
+          header .bao .top .nav-left .left li a {
+            font-size: 12px;
+            padding: 0 6px;
+            line-height: 40px;
+            color: darkgrey;
+            border-right: 1px solid darkgrey; }
+          header .bao .top .nav-left .left li .last_a {
+            border-right: none; }
+      header .bao .top .nav-right {
+        width: 270px;
+        height: 40px;
+        float: right; }
+        header .bao .top .nav-right .right li {
+          float: left; }
+          header .bao .top .nav-right .right li a {
+            font-size: 12px;
+            color: darkgrey;
+            line-height: 40px;
+            padding: 0 8px;
+            border-right: 1px solid darkgrey; }
+          header .bao .top .nav-right .right li .zuihou-a {
+            border-right: none; }
+        header .bao .top .nav-right .shop-Car {
+          float: right; }
+          header .bao .top .nav-right .shop-Car img {
+            display: block;
+            width: 20px;
+            height: 20px;
+            float: left;
+            margin: 10px 0; }
+          header .bao .top .nav-right .shop-Car a {
+            font-size: 12px;
+            color: darkgrey;
+            line-height: 40px;
+            float: left;
+            padding: 0 5px; }
+  header .top-2 {
+    width: 100%; }
+    header .top-2 .div_container {
+      width: 1226px;
+      margin: 0 auto;
+      height: 100px;
+      background: #ff00ff; }
+      header .top-2 .div_container .img-one {
+        float: left;
+        margin-top: 22.5px;
+        margin-left: 22.5px; }
+      header .top-2 .div_container .zhong-header {
+        float: right;
+        width: 80%;
+        height: 100px; }
+        header .top-2 .div_container .zhong-header ul li {
+          float: left;
+          line-height: 100px; }
+          header .top-2 .div_container .zhong-header ul li a {
+            padding: 0 10px; }
+        header .top-2 .div_container .zhong-header .search-one {
+          float: right;
+          margin-top: 25px;
+          height: 50px;
+          width: 300px; }
+          header .top-2 .div_container .zhong-header .search-one input {
+            float: left;
+            height: 49px;
+            width: 200px;
+            border: 1px solid darkgrey; }
+          header .top-2 .div_container .zhong-header .search-one .div-img {
+            float: left;
+            width: 49px;
+            height: 49px;
+            border: 1px solid darkgrey;
+            border-left: none; }
+            header .top-2 .div_container .zhong-header .search-one .div-img img {
+              display: block;
+              width: 30px;
+              height: 30px;
+              margin-top: 10px;
+              margin-left: 10px; }
+
+footer {
+  width: 100%;
+  height: 273px; }
+  footer .footer-one {
+    width: 1226px;
+    height: 80px;
+    background: #ddffcc;
+    margin: 0 auto; }
+    footer .footer-one ul {
+      display: flex;
+      justify-content: space-around; }
+      footer .footer-one ul li {
+        line-height: 80px;
+        float: left; }
+        footer .footer-one ul li a {
+          font-size: 14px;
+          padding: 40px 20px; }

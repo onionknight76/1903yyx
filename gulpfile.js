@@ -17,7 +17,7 @@ let gulp = require('gulp'),
         .pipe(rename({suffix : '.min'}))
         .pipe(gulp.dest('./dist/js'));
     })
-    gulp.task('css',()=>{
+    gulp.task('sass',()=>{
         gulp.src('./src/sass/*.scss')
         .pipe(sass())
         .pipe(rename({suffix : '.min'}))
@@ -30,3 +30,8 @@ let gulp = require('gulp'),
         .pipe(gulp.dest("./dist/img"))
     })
     
+gulp.task("default",()=>{
+    gulp.watch("./src/sass/*.scss",["sass"]);
+    gulp.watch("./src/js/*.js",["js"]);
+    gulp.watch("./src/img/*.*",["img"]);
+})

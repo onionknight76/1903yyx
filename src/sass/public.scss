@@ -1,3 +1,195 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+ul,li{
+	list-style:none;
+}
+img{
+	border:0;
+	vertical-align: middle;
+}
+table{
+	border-collapse: collapse;
+	border-spacing:0;
+}
+p{
+	word-wrap: break-word;
+	font-style:normal;
+	font-weight: normal;
+}
+a{
+	text-decoration: none;
+}
+input,button{
+	outline:none;
+	border:none;
+	list-style: none;
+}
+
+html,body{
+	height:100%;
+	width:100%;
+}
+body{
+	position:relative;
+	font-size:16px;
+}
+
+$fontSize : 12px;
+
 header{
-    width: 100px;
+    width: 100%;
+    height:140px;
+   .bao{
+        width: 100%;
+        background: #000000;
+        .top{
+            width: 1226px;
+            height: 40px;
+            background: #000000;
+            margin: 0 auto;
+            .nav-left{
+                width: 699px;
+                height: 40px;
+                float: left;
+                .left{
+                    li{
+                        float: left;
+                        
+                       a{
+                           font-size: 12px;
+                           padding: 0 6px;
+                           line-height: 40px;
+                           color: darkgrey;
+                           border-right: 1px solid darkgrey;
+                       }
+                       .last_a{
+                           border-right: none;
+                       }
+                    }                
+                }
+            }
+            .nav-right{
+                width: 270px;
+                height: 40px;
+                float: right;
+                .right{
+                       
+                        li{
+                            float: left;   
+                            a{
+                                font-size: 12px;
+                                color: darkgrey;
+                                line-height: 40px;
+                                padding: 0 8px;
+                                border-right: 1px solid darkgrey;
+                            }
+                            .zuihou-a{
+                                border-right: none;
+                            }
+                        }
+                }
+                .shop-Car{
+                   
+                   float: right;
+                    img{
+                        display: block;
+                        width: 20px;
+                        height: 20px;
+                        float: left;
+                        margin: 10px 0;
+                    }
+                    a{
+                        font-size: 12px;
+                        color: darkgrey;
+                        line-height: 40px;
+                        float: left;
+                        padding: 0 5px;
+                    }
+                }
+            }
+        }
+   }
+
+    .top-2{
+        width: 100%;
+        
+        .div_container{
+            width: 1226px;
+            margin: 0 auto;
+            height: 100px;
+            background: #ff00ff;
+            .img-one{
+                float: left;
+                margin-top: 22.5px;
+                margin-left: 22.5px;
+            }
+            
+            .zhong-header{
+                float: right;
+                width:  80%;
+                height: 100px;
+                ul{
+                    li{
+                        float: left;
+                        line-height: 100px;
+                        a{
+                            padding: 0 10px;
+                        }
+                    }
+                }
+                .search-one{
+                    float: right;
+                    margin-top: 25px;
+                    height: 50px;
+                    width: 300px;
+                   
+                    input{
+                        float: left;
+                        height: 49px;
+                        width: 200px;
+                        border: 1px solid darkgrey;
+                    }
+                    .div-img{
+                        float: left;
+                        width: 49px;
+                        height: 49px;
+                        border: 1px solid darkgrey;
+                        border-left: none;
+                        img{
+                            display: block;
+                            width: 30px;
+                            height: 30px; 
+                            margin-top: 10px;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+footer{
+    width: 100%;
+    height:273px;
+    .footer-one{
+        width: 1226px;
+        height: 80px;
+        background: #ddffcc;
+        margin: 0 auto;
+        ul{
+            display: flex;
+            justify-content: space-around;
+            li{
+                line-height: 80px;
+                float: left;
+                a{
+                    font-size: 14px;
+                    padding: 40px 20px;   
+                }
+            }
+        } 
+    }
 }
