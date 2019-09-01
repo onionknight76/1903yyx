@@ -120,7 +120,7 @@ header{
             width: 1226px;
             margin: 0 auto;
             height: 100px;
-            background: #ff00ff;
+          
             .img-one{
                 float: left;
                 margin-top: 22.5px;
@@ -174,22 +174,118 @@ header{
 footer{
     width: 100%;
     height:273px;
+
     .footer-one{
         width: 1226px;
         height: 80px;
-        background: #ddffcc;
+     
         margin: 0 auto;
+        border-bottom: 1px solid darkgrey;
         ul{
+            width: 100%;
+            height: 25px;
             display: flex;
             justify-content: space-around;
+            padding-top: 30px;
             li{
-                line-height: 80px;
                 float: left;
-                a{
-                    font-size: 14px;
-                    padding: 40px 20px;   
-                }
+                width: 274px;
+                height: 25px;
+                border-right: 1px solid darkgrey;
+                padding-left: 50px;
+            }
+            .last-li{
+                border-right: none;
             }
         } 
+    }
+    .footer-two{
+        width: 1226px;
+        height: 192px;
+        
+        margin: 0 auto;
+        .content-two{
+            width: 100%;
+            ul{
+                float: left;
+                margin: 50px;
+            }
+
+            .div-phone{
+                float: right;
+                margin-top: 50px;
+                width: 200px;
+                border-left: 1px solid darkgrey;
+                h3{
+                    text-align: center;
+                }
+                p{
+                    text-align: center;
+                }
+                .div-kefu{
+                    width: 120px;
+                    height: 30px;
+                    margin: 0 auto;
+                    background: #ddffcc;
+                    img{
+                        margin-left: 10px;
+                        margin-top: 5px;
+                    }
+                    a{
+                       margin-top: 5px;
+                    }
+                    
+                }
+            }
+        }
+    }
+    .footer-three{
+        width: 1263px;
+        height: 232px;
+       background: rgb(161, 159, 159);
+        padding-top: 30px;
+        margin: 0 auto;
+        .content-three{
+          width: 100%;
+          height: 150px;
+        
+            .div-img2{
+                float: left;
+                width: 106px;
+                height: 150px;
+              
+                .mi-2{
+                    margin-left: 50px;
+                    float: left;
+                }
+            }
+            ul{
+                li{
+                    float: left;
+                    font-size: 13px;
+                    padding: 0 3px;
+                    border-right: 1px solid #000000;
+                }
+            }
+            p{
+                float: left;
+                width: 1159px;
+                height: 72px;
+                margin-top: -133px;
+                margin-left: 106px;
+                a{
+                    display: block;
+                    font-size: 10px;
+                    color: antiquewhite;
+                }
+            }
+            .d-img{
+               padding-top: 80px;
+            }
+            .ha{
+           margin-top: 20px;
+           margin-left: 400px;
+            }
+        }
     }
 }
