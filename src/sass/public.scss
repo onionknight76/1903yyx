@@ -34,7 +34,8 @@ html,body{
 }
 body{
 	position:relative;
-	font-size:16px;
+    font-size:16px;
+    overflow-x: hidden;
 }
 
 $fontSize : 12px;
@@ -42,6 +43,65 @@ $fontSize : 12px;
 header{
     width: 100%;
     height:140px;
+    position: relative;
+   
+    .hide{
+        margin: 0 auto;
+        width: 1263x;
+        height: 250px;
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        top: 100px;
+        z-index: 1000;  
+        display: none;
+        
+        li{
+            width: 204px;
+            
+            div{
+                height: 120px;
+                width: 204px;   
+                border-right: 0.5px solid darkgrey;
+                margin-top: 40px;
+                img{
+                    display: block;
+                    height: 120px;
+                    width: 120px;
+                    margin-left: 42px;
+                }
+            }
+            .last-dd{
+                border-right: none;
+            }
+           
+            p{
+                text-align: center;   
+            }
+            a{
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+    .erweima{
+        width: 100px;
+        height: 100px;
+        background: #ff00ff;
+        position: absolute;
+        left: 525px;
+        top:40px;
+        display: none;
+    }
+    .gouwuche{
+        width: 302px;
+        height: 100px;
+        background: #ddffcc;
+        position: absolute;
+        right: 17px;
+        top: 40px;
+        display: none;
+    }
    .bao{
         width: 100%;
         background: #000000;
@@ -56,8 +116,7 @@ header{
                 float: left;
                 .left{
                     li{
-                        float: left;
-                        
+                        float: left;              
                        a{
                            font-size: 12px;
                            padding: 0 6px;
@@ -121,11 +180,15 @@ header{
             margin: 0 auto;
             height: 100px;
           
-            .img-one{
-                float: left;
-                margin-top: 22.5px;
-                margin-left: 22.5px;
-            }
+   .mi-logo{
+     
+    .img-one{
+        float: left;
+        margin-top: 22.5px;
+        margin-left: 22.5px;
+        position: absolute;
+         }
+   }
             
             .zhong-header{
                 float: right;
@@ -135,10 +198,14 @@ header{
                     li{
                         float: left;
                         line-height: 100px;
+                     
                         a{
                             padding: 0 10px;
                         }
+                     
                     }
+                    
+                    
                 }
                 .search-one{
                     float: right;
@@ -174,7 +241,7 @@ header{
 footer{
     width: 100%;
     height:273px;
-
+   
     .footer-one{
         width: 1226px;
         height: 80px;
@@ -188,7 +255,7 @@ footer{
             justify-content: space-around;
             padding-top: 30px;
             li{
-                float: left;
+               // float: left;
                 width: 274px;
                 height: 25px;
                 border-right: 1px solid darkgrey;
@@ -227,6 +294,7 @@ footer{
                     height: 30px;
                     margin: 0 auto;
                     background: #ddffcc;
+                    border-radius: 10%;
                     img{
                         margin-left: 10px;
                         margin-top: 5px;

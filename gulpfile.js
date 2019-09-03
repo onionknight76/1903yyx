@@ -2,10 +2,10 @@
 let gulp = require('gulp'),
     rename = require('gulp-rename'),
     uglify = require('gulp-uglify'),
-    concat = require('gulp-concat'),
     sass = require('gulp-sass'),
     imagemin = require('gulp-imagemin'),
     cssnano = require('gulp-cssnano');
+
 //发布任务
     gulp.task('test',()=>{
 
@@ -20,6 +20,7 @@ let gulp = require('gulp'),
     gulp.task('sass',()=>{
         gulp.src('./src/sass/*.scss')
         .pipe(sass())
+        .pipe(cssnano())
         .pipe(rename({suffix : '.min'}))
         .pipe(gulp.dest('./dist/css'));
     })

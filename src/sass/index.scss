@@ -1,26 +1,235 @@
 article{
     margin: 0 auto;
     width: 1226px;
-    height: 500px;
+  
   
     .big-photo{
-        width: 100%;
+        width: 1226px;
         height: 460px;
-        background:#c74c1c;
-        ul{
+        background: #25909e;
+       
+        #banner {
+            position: relative;
+            margin: 0 auto;
+            width: 1226px;
+            height: 460px;
+           // background:red;
+            
+            .img-item {
+                /* 脱离文档流叠在一起 */
+                position: absolute;
+                display: none;
+                .i1{
+                    display: block;
+                    width: 1226px;
+                }
+            }
+          
+            .btn-list {
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+                width: 120px;
+                height: 20px;
+                
+            .btn{
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: #666;
+                float: left;
+                margin-left: 5px;
+                cursor: pointer;
+            }
+        }
+        .tab {
+            position: absolute;
+            top: 200px;
+            width: 41px;
+            height: 41px;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+        .left {
+            position: absolute;
+            left: 234PX;
+        }
+
+        .right {
+            position: absolute;
+            right: 0PX;
+        }
+
+        .left:hover {
+            background: #ccff00;
+            cursor: pointer;
+        }
+
+        .right:hover {
+            background: #ccff00;
+            cursor: pointer;
+        }
+
+    }
+
+      
+    .nav-list{
             width: 234px;
-            height: 100%;
-            background: #25909e;
-            opacity: 0.5;
-            li{
-                padding: 13px 30px 12px 30px;
-                a{
-                    margin-left: 10px;
+            height: 460px;
+            padding: 20px 0;   
+            background:#666;
+            position: absolute;
+            top: 140px;
+
+            .nav-list-first:hover{
+                background:#ccff00;
+  
+            }
+              //划入父级显示子级 父:hover(空格)子级
+            .nav-list-first:hover .show-wrap{
+                display: block;
+                opacity: 100;
+            }
+            .nav-list-first{
+                //因为paddding给了上下各20 所以宽要小一点
+                height: 42px; 
+               // opacity: 0.9;
+                .first-link{
+                    //建议转块  行内块不兼容ie678;
+                    float: left;
+                    color: antiquewhite;
+                    //避免样式污染(将文本的属性放在文本标签里，缩进30px)
+                    display: block;
+                    width: 150px;
+                    text-indent: 30px;
+                    line-height: 42px;
                 }
                 span{
-                   float: right;
+                    display: block;
+                    width: 20px;
+                    float: right;
+                    line-height: 42px;
+
+                }
+                .show-wrap{
+                    height: 460px;
+                    width: 500px;
+                    background:red;
+                    position: absolute;
+                    top: 0;
+                    left: 234px;
+                    //opacity: 1;
+                    display: none;
+                }
+            } 
+    
+    
+        }
+  
+    }
+    .neirong-1{
+        margin-top: 10px;
+        display: flex;
+        width: 1226px;
+        height: 170px;
+       
+        ul{
+            float: left;
+            display: flex;
+            width: 234px;
+            height: 170px;
+            background:red;
+            //设置弹性盒为多行
+            flex-wrap: wrap;
+            //弹性盒子元素侧抽居中(垂直)
+            align-items: center;
+            li{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 78px;
+                padding: 7px 7px 7px 7px;
+                a{
+                    font-size: 12px;
+                    color: aliceblue;
+                }
+            }           
+            
+        }
+        .three-photo{
+            float: right;
+            display: flex;
+            margin-left: 13px;
+            
+            img{
+                display: block;
+                width: 316px;
+                height: 170px;
+               margin-left: 10px;
+            }
+        }
+    }
+    .neirong-2{
+        margin-top: 10px;
+        width: 1226px;
+        height: 340px;
+        background: #25909e;
+        ul{
+            display: flex;  
+            justify-content: space-between;
+            li{
+                width: 234px;
+                height: 340px;
+                background: #c74c1c;
+                text-align: center;
+            }
+        }
+    }
+    .neirong-3{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .neirong-4{
+        width: 1226px;
+        height: 830px;
+        background: #25909e;
+      
+        p{
+            height: 58px;
+            font-size: 22px;            
+            line-height: 58px;
+            a{
+                font-size: 12px;
+                color: antiquewhite;
+                float: right;
+            }
+        }
+        .baobao{
+            display: flex;
+            
+            .div-img-da{
+                width:234px;
+                height: 614px;
+                background: #cf0fcf;         
+            }
+            ul{
+                width: 972px;
+                height: 614px;
+                background: #c74;
+                margin-left: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                li{
+                    width: 234px;
+                    height: 300px;
+                    background:#259;
+                    padding: 15px 0;
+                    margin: 0 0 0 9px;
                 }
             }
         }
+        .guanggao-1{
+            margin: 20px 0;
+         }
     }
 }
