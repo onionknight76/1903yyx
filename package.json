@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
     "gulp": "^3.9.1",
     "gulp-babel": "^8.0.0",
     "gulp-cssnano": "^2.1.3",

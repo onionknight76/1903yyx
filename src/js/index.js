@@ -15,6 +15,31 @@ $(function () {
         })
     })
 })
+$(function () {
+    $(".show-wrap").each(function () {
+        var oLi = $(this).find(".content-wrap");//需要排列的li
+        var oHeight = oLi.height();//获取li的高度
+        var oWidth = oLi.width();//获取li的宽度 
+        // console.log(oWidth);
+        // console.log(oHeight);
+        var length = oLi.length;
+        // console.log(length);
+        var col = Math.ceil(length / 6); //列数向上取整(11/6 = 1余5向上取整为两列)
+        // console.log(col);
+        $(this).width(col * oWidth);
+
+        oLi.each(function (index) {
+            console.log(index);//index为每一个li
+            //纵向排列
+            var x = Math.floor(index / 6);//纵向排列 用下标除以6(第一列的下标只到5，除以6都为零点几，向下取整为0，所以第一列的left都为0，第二列的下标从6开始除以6向下取整为1，所以第二列的left都为1(乘以自身的宽就为自身的left坐标),依次类推)
+            var y = index % 6;//下标模每列的的总数(小于6就返回当前下标，第几个就乘以几个自身的高，就为自身y轴的坐标)
+            $(this).css({
+                left: x * oWidth + "px",
+                top: y * oHeight + "px"
+            })
+        })
+    })
+})
 //右导航栏变色
 $(function () {
     $.each($(".right li"), function (index, value) {
@@ -23,6 +48,14 @@ $(function () {
         }, function () {
             $(".right li a").eq(index).css("color", "");
         })
+    })
+})
+$(function () {
+    $(".right li a").eq(0).click(function () {
+        location.href = "login.html";
+    })
+    $(".right li a").eq(1).click(function () {
+        location.href = "register.html";
     })
 })
 //购物车显示
@@ -65,11 +98,11 @@ $("#banner").hover(function () {
 //点击小圆点
 $(".btn").click(function () {
     index = $(this).index();
-    alert(index);
+    //alert(index);
     $(".img-item").eq(index).fadeIn().siblings().fadeOut();
 
     $(".btn").eq(index).css("background", "#FFFFFF").siblings().css("background", "#666666")
-    alert(index);
+    //alert(index);
 })
 //点击右按钮
 $(".right").click(function () {
@@ -131,16 +164,16 @@ $(function () {
 })
 
 $(function () {
-    setInterval(function(){
+    setInterval(function () {
         var myDate = new Date(); //实例一个时间对象；
         // myDate.getFullYear();   //获取系统的年；
         // myDate.getMonth() + 1;   //获取系统月份，由于月份是从0开始计算，所以要加1
         // myDate.getDate(); // 获取系统日，
-      var hour =   myDate.getHours(); //获取系统时，
-      var minute = myDate.getMinutes(); //分
-      var second =  myDate.getSeconds(); //秒
-      $(".time span").eq(0).html(hour);
-      $(".time span").eq(1).html(minute);
-      $(".time span").eq(2).html(second);
-    },1000)
+        var hour = myDate.getHours(); //获取系统时，
+        var minute = myDate.getMinutes(); //分
+        var second = myDate.getSeconds(); //秒
+        $(".time span").eq(0).html(hour);
+        $(".time span").eq(1).html(minute);
+        $(".time span").eq(2).html(second);
+    }, 1000)
 })

@@ -114,12 +114,23 @@ article{
                 .show-wrap{
                     height: 460px;
                     width: 500px;
-                    background:red;
+                    background: #fff;
                     position: absolute;
                     top: 0;
                     left: 234px;
                     //opacity: 1;
                     display: none;
+                    .item-wrap{
+                        .content-wrap{
+                            position: absolute;
+                            width: 265px;
+                            height:76px;
+                            padding-left: 20px;              
+                            a{
+                             line-height: 76px;
+                            }
+                        }
+                    }
                 }
             } 
     
@@ -205,6 +216,7 @@ article{
             background: #fff;
             margin-left: 2px;
             position: relative;
+            z-index: 1000;
             a{
                 font-size: 30px;
                 display: block;
@@ -266,11 +278,12 @@ article{
         margin-top: 20px;
         margin-bottom: 10px;
     }
+    //最大内容区
     .neirong-4{
         width: 1226px;
         height: 830px;
-        background: #25909e;
-      
+        background: #f9f9f9;
+        position: relative;
         p{
             height: 58px;
             font-size: 22px;            
@@ -281,27 +294,42 @@ article{
                 float: right;
             }
         }
+
         .baobao{
             display: flex;
             
             .div-img-da{
                 width:234px;
                 height: 614px;
-                background: #cf0fcf;         
+                    img{
+                        display: block;
+                        width:234px;
+                        height: 606px;
+                    }   
             }
-            ul{
+            .hehe{
+                position: absolute;
+                right: 8px;
                 width: 972px;
                 height: 614px;
-                background: #c74;
+                //background: #c74;
                 margin-left: 20px;
                 display: flex;
                 flex-wrap: wrap;
                 li{
                     width: 234px;
                     height: 300px;
-                    background:#259;
+                    background:#fff;
                     padding: 15px 0;
                     margin: 0 0 0 9px;
+                    text-align: center;
+
+                }
+                li:hover{
+                        cursor: pointer;
+                        box-shadow: 0 5px 5px 5px rgba(0,0,0,0.1);
+                  
+                  
                 }
             }
         }
